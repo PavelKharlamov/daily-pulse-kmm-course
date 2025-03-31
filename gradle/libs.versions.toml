@@ -3,6 +3,7 @@ agp = "8.2.2"
 coilCompose = "2.5.0"
 kotlin = "1.9.10"
 compose = "1.5.1"
+accompanistSwiperefresh = "0.24.13-rc"
 compose-compiler = "1.5.3"
 compose-material3 = "1.1.2"
 androidx-activityCompose = "1.7.2"
@@ -16,6 +17,7 @@ sqlDelight = "2.0.0"
 stately = "1.2.2"
 
 [libraries]
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
