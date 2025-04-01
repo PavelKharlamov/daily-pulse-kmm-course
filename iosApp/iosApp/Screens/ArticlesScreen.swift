@@ -38,7 +38,7 @@ struct ArticlesScreen: View {
     
     var body: some View {
         VStack {
-            AppBar()
+            ArticlesAppBar()
             
             if viewModel.articlesState.loading {
                 Loader()
@@ -64,7 +64,7 @@ struct ArticlesScreen: View {
     }
 }
 
-struct AppBar: View {
+struct ArticlesAppBar: View {
     var body: some View {
         Text("Articles")
             .font(.largeTitle)
@@ -93,6 +93,8 @@ struct ArticleItemView: View {
                     .fontWeight(.bold)
                 Text(article.desc)
                 Text(article.date).frame(maxWidth: .infinity, alignment: .trailing).foregroundStyle(.gray)
+                    .padding(.bottom, 10)
+                Divider()
             }
             .padding(16)
         }

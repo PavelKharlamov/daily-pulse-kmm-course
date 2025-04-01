@@ -12,7 +12,9 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.List
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -39,12 +41,13 @@ import org.koin.androidx.compose.getViewModel
 @Composable
 fun ArticlesScreen(
     onAboutButtonClick: () -> Unit,
+    onSourcesButtonClick: () -> Unit,
     articlesViewModel: ArticlesViewModel = getViewModel(),
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
 
     Column {
-        AppBar(onAboutButtonClick)
+        AppBar(onAboutButtonClick, onSourcesButtonClick)
 
 //        if (articlesState.value.loading)
 //            Loader()
@@ -59,10 +62,17 @@ fun ArticlesScreen(
 @Composable
 private fun AppBar(
     onAboutButtonClick: () -> Unit,
+    onSourcesButtonClick: () -> Unit
 ) {
     TopAppBar(
         title = { Text(text = "Articles") },
         actions = {
+            IconButton(onClick = onSourcesButtonClick) {
+                Icon(
+                    imageVector = Icons.Outlined.List,
+                    contentDescription = "Sources Button"
+                )
+            }
             IconButton(onClick = onAboutButtonClick) {
                 Icon(
                     imageVector = Icons.Outlined.Info,
@@ -95,6 +105,7 @@ fun ArticleItemView(article: Article) {
             .fillMaxWidth()
             .padding(16.dp)
     ) {
+        Spacer(modifier = Modifier.height(5.dp))
         AsyncImage(
             model = article.imageUrl,
             contentDescription = null
@@ -112,7 +123,8 @@ fun ArticleItemView(article: Article) {
             style = TextStyle(color = Color.Gray),
             modifier = Modifier.align(Alignment.End)
         )
-        Spacer(modifier = Modifier.height(4.dp))
+        Spacer(modifier = Modifier.height(10.dp))
+        Divider()
     }
 }
 
