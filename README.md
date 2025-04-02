@@ -50,6 +50,20 @@ Completed:
 **Kotlin Multiplatform Masterclass — KMP, KMM - Android, iOS**  
 Instructor: Petros Efthymiou  
 Date: April 2, 2025
+📘 [View course on Udemy](https://www.udemy.com/course/kotlin-multiplatform-masterclass/?couponCode=ST15MT20425G1)
+
+---
+
+## 🧰 Development Environment
+
+- 💻 MacBook Pro M1  
+- macOS Sonoma 14.7  
+- Xcode 16.0 (16A242d)  
+- Android Studio Ladybug | 2024.2.1  
+- Kotlin: 1.9.10  
+- Jetpack Compose: 1.5.1  
+- Swift: 6.0  
+- SwiftUI: 6.0 (Xcode 16.0)  
 
 ---
 
@@ -74,8 +88,8 @@ open iosApp/iosApp.xcodeproj
 
 ## 🙋‍♂️ Author
 
-Pavel Kharlamov
-GitHub: [@PavelKharlamov](https://github.com/PavelKharlamov)
+**Pavel Kharlamov**  
+🔗 GitHub: [@PavelKharlamov](https://github.com/PavelKharlamov)
 
 ---
 
