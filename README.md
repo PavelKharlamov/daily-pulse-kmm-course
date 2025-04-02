@@ -36,10 +36,10 @@ A cross-platform news aggregation app built with **Kotlin Multiplatform (KMP/KMM
 
 ## 📦 Artifacts
 
-- 📱 [Download APK](artifacts/DailyPulse_Android.apk)
-- 🍏 [Download .app (Simulator)](artifacts/DailyPulse_iOS_Simulator.app)
+- 📱 [Download Android APK](https://github.com/PavelKharlamov/daily-pulse-kmm-course/releases/download/v1.0.0/DailyPulse_Android.apk)
+- 🍏 [Download .zip archive with .app (iOS Simulator)](https://github.com/PavelKharlamov/daily-pulse-kmm-course/releases/download/v1.0.0/DailyPulse_iOS_Simulator.zip)
 
-> `.app` file is built for iOS Simulator only and won't run on physical devices.
+> ⚠️ The `.app` file is built for iOS Simulator only and cannot be run on physical devices.
 
 ---
 
