@@ -27,6 +27,7 @@ A cross-platform news aggregation app built with **Kotlin Multiplatform (KMP/KMM
 - Kotlin Multiplatform Mobile (KMM)
 - Ktor Client for networking
 - SQLDelight for local data storage
+- Koin for dependency injection
 - MVI + Clean architecture
 - Jetpack Compose (Android UI)
 - SwiftUI (iOS UI)
